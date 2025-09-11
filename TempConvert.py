@@ -10,8 +10,10 @@ def main():
   #Output converted temperature.
   tempF = 80
 
-  tempC = tempF / 2
+  tempC = (tempF - 32) * 5/9
+  tempC = round(tempC, 1)
 
   print(tempF, "is ", tempC, "degrees celsius.")
+
 if __name__ == '__main__':
   main()
